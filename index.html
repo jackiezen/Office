@@ -3,6 +3,7 @@
 
 <head>
 	<title>Office | Jacquelyn Zen</title>
+	<meta charset="utf-8" />
 	<link rel="icon" type="image/ico" href="images/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -13,7 +14,9 @@
 
 	<h1>Office</h1>
 	<h2>by Jacquelyn Zen</h2>
-
+	<!--FLOOR-->
+	<div id="floor"></div>
+	<!--END OF FLOOR-->
 	<div id="scene">
 
 		<!--CLOCK-->
@@ -40,9 +43,6 @@
 		<!--END OF CLOCK-->
 
 
-
-
-
 		<!--BOOK STACK-->
 		<div id="stack-book">
 			<div id="stack-book-1"></div>
@@ -59,6 +59,7 @@
 			<div id="stack-book-12"></div>
 		</div>
 		<!--END OF BOOK STACK-->
+
 
 		<!--BINDER STACK-->
 		<div id="stack-binder">
@@ -105,6 +106,7 @@
 		</div>
 		<!--END OF BINDER STACK-->
 
+
 		<!--PENCIL HOLDER CONTENTS-->
 		<div id="pencil-holder-contents">
 			<div id="pencil-cup">
@@ -130,6 +132,7 @@
 		</div>
 		<!--END OF PENCIL HOLDER CONTENTS-->
 
+
 		<!--COFFEE CUP-->
 		<div id="coffee-cup">
 			<div id="coffee-cup-top">
@@ -143,6 +146,7 @@
 		</div>
 		<!--END OF COFFEE CUP-->
 
+
 		<!--BOOK STACK-->
 		<div id="stack-book-small">
 			<div id="stack-book-2"></div>
@@ -153,6 +157,7 @@
 			<div id="stack-book-9"></div>
 		</div>
 		<!--END OF BOOK STACK-->
+
 
 		<!--TAKE-OUT-->
 		<div id="take-out">
@@ -172,6 +177,7 @@
 		</div>
 		<!--END OF TAKE-OUT-->
 
+
 		<!--COMPUTER-->
 		<div id="computer">
 			<div id="computer-side">
@@ -190,7 +196,6 @@
 		</div>
 
 		<!--END OF COMPUTER-->
-
 
 
 		<!--CHAIR-->
@@ -254,7 +259,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!--END OF SHELF 2-->
 
 
@@ -298,7 +302,6 @@
 
 
 		<!--POST-ITS-->
-
 		<div class="drag" id="note-1" draggable="true">
 			<p class="note">BUY MILK</p>
 		</div>
@@ -308,14 +311,14 @@
 		<div class="drag" id="note-3" draggable="true">
 			<p class="note">FEED CATS</p>
 		</div>
-
 		<!--END OF POST-ITS-->
 
+
 		<!--PHOTOS-->
-		<div class="drag" id="photo-1"><p class="photo">CAT LADY</p></div>
+		<div class="drag" id="photo-1">
+			<p class="photo">CAT LADY</p>
+		</div>
 		<!--END OF PHOTOS-->
-
-
 
 
 		<!--DESK-->
@@ -332,21 +335,64 @@
 		<!--END OF DESK-->
 
 
+		<!--BIG BOX-->
+		<div id="big-box">
+			<div id="big-box-body">
+				<div id="big-box-shadow"></div>
+				<div id="big-box-hole"></div>
+			</div>
+
+			<div id="box-folder"></div>
+			<div id="folder-paper">
+				<p class="paper">Dear Jackie,
+					<br>
+					<br>Please bring home some chicken!
+					<br>
+					<br>
+					<br>Love,
+					<br>Your cats</p>
+			</div>
+
+			<div id="folder-paper-2">
+				<p class="paper">Grocery List
+					<br>
+					<br>Eggs
+					<br>Butter
+					<br>Flour
+					<br>Coffee
+					<br>Bread</p>
+			</div>
+
+		</div>
+		<!--END OF BIG BOX-->
+
+
+		<!--WALL OUTLET-->
+		<div id="outlet">
+			<div id="outlet-face"></div>
+			<div id="outlet-face"></div>
+		</div>
+		<!--END OF WALL OUTLET-->
+
+
+
+
+
+
 
 
 
 
 	</div>
 </body>
+
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>
 	$(function () {
 		$(".drag").draggable().css('cursor', 'pointer');
 	});
-</script>
 
-<script>
 	$('#plant').hover(
 		function () {
 			sound = $(this).children('#sound')[0];
@@ -357,7 +403,7 @@
 			sound.currentTime = 0;
 		}
 	);
-	
+
 	$('#clock').hover(
 		function () {
 			sound = $(this).children('#sound')[0];
@@ -368,6 +414,14 @@
 			sound.currentTime = 0;
 		}
 	);
+
+	$("#chair-seat").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
+		$(this).removeClass("animated")
+	})
+
+	$("#chair-seat").hover(function () {
+		$(this).addClass("animated");
+	})
 </script>
 
 </html>
