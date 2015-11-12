@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/ico" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css.css">
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Permanent+Marker|Pacifico' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/prefixfree.min.js"></script>
 </head>
 
@@ -133,9 +133,11 @@
 				<div id="coffee-cup-rim"></div>
 			</div>
 			<div id="coffee-cup-bottom">
+				
 				<div id="coffee-cup-holder">
 					<div id="coffee-cup-logo"></div>
 				</div>
+				<p class="cup">Jackie</p>
 			</div>
 		</div>
 		<!--END OF COFFEE CUP-->
@@ -162,7 +164,12 @@
 						<div id="take-out-box-handle-dot"></div>
 					</div>
 				</div>
-				<div id="take-out-box-bottom-back"></div>
+
+				<div id="take-out-box-bottom-back">
+					<p class="box">Chinese
+						<br>Food</p>
+				</div>
+
 			</div>
 			<div id="chopsticks">
 				<div id="chopsticks-1"></div>
@@ -185,7 +192,9 @@
 			<div id="computer-stand">
 				<div id="computer-stand-shadow"></div>
 				<div id="computer-stand-hole"></div>
+				<div id="computer-cable"></div>
 			</div>
+
 			<div id="computer-stand-bottom"></div>
 			<div id="computer-stand-curve"></div>
 		</div>
@@ -367,6 +376,7 @@
 		<div id="bag">
 			<div id="bag-body">
 				<div id="bag-logo"></div>
+				<p class="bag">Groceries</p>
 				<div id="bag-handle-front"></div>
 				<div id="bag-handle-back"></div>
 				<div id="bag-side"></div>
@@ -412,11 +422,11 @@
 		}
 	);
 
-	$("#chair-seat").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
+	$("#chair-seat, #bag").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
 		$(this).removeClass("animated")
 	})
 
-	$("#chair-seat").hover(function () {
+	$("#chair-seat, #bag").hover(function () {
 		$(this).addClass("animated");
 	})
 </script>
