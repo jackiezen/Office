@@ -1244,6 +1244,16 @@ h2 {
 	cursor: pointer;
 }
 
+#computer-stand-hole {
+	position: relative;
+	background-color: #FFF;
+	width: 30px;
+	height: 30px;
+	margin-left: 50px;
+	margin-top: 50px;
+	z-index: 100;
+}
+
 #computer-stand-shadow {
 	position: relative;
 	width: 0;
