@@ -3,7 +3,6 @@ body {
 	background-color: #A5D8DB;
 	font-family: 'Merriweather', serif;
 	-webkit-user-select: none;
-	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
@@ -2212,6 +2211,7 @@ h2 {
 	}
 }
 
+
 /*END OF PLANT*/
 
 
@@ -3276,5 +3276,6 @@ p.paper {
 		transform: translateY(-20px) rotate(-5deg);
 	}
 }
+
 
 /*END OF BAG*/
