@@ -6,19 +6,19 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/ico" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css.css">
-	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Permanent+Marker' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
 </head>
 
 <body>
 
 	<h1>Office</h1>
 	<h2>by Jacquelyn Zen</h2>
-	
+
 	<!--FLOOR-->
 	<div id="floor"></div>
 	<!--END OF FLOOR-->
-	
+
 	<div id="scene">
 
 		<!--CLOCK-->
@@ -387,9 +387,7 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>
-	$(function () {
-		$(".drag").draggable().css('cursor', 'pointer');
-	});
+	$(".drag").draggable().css('cursor', 'pointer');
 
 	$('#plant').hover(
 		function () {
