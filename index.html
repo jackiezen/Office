@@ -233,6 +233,9 @@
 					</div>
 				</div>
 			</div>
+			<audio id="sound" preload="auto">
+				<source src="sounds/chair.mp3" />
+			</audio>
 		</div>
 		<!--END OF CHAIR-->
 
@@ -270,12 +273,14 @@
 		</div>
 		<!--END OF SHELF 2-->
 
-
 		<!--SHELF 2-->
 		<div id="shelf-area-2">
 			<div id="shelf-2">
 				<div id="shelf-2-box">
 					<div id="box-heart"></div>
+					<audio id="sound" preload="auto">
+						<source src="sounds/box.mp3" />
+					</audio>
 				</div>
 				<div id="shelf-2-book-1">
 					<div id="shelf-2-book-1-line-1"></div>
@@ -415,7 +420,7 @@
 <script>
 	$(".drag").draggable().css('cursor', 'pointer');
 
-	$('#tape-dispenser, #coffee-cup, #clock, #plant, #big-box, #bag, #stack-binder, #stack-book').hover(
+	$('#tape-dispenser, #coffee-cup, #clock, #plant, #big-box, #stack-binder, #stack-book, #shelf-2-box').hover(
 		function () {
 			sound = $(this).children('#sound')[0];
 			sound.play();
@@ -426,12 +431,16 @@
 		}
 	);
 
-	$("#chair-seat, #bag").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
-		$(this).removeClass("animated")
+	$("#chair-seat, #bag, #chair").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
+		$(this).removeClass("animated");
+		sound = $(this).children('#sound')[0];
+		sound.play();
 	})
 
-	$("#chair-seat, #bag").hover(function () {
+	$("#chair-seat, #bag, #chair").hover(function () {
 		$(this).addClass("animated");
+		sound = $(this).children('#sound')[0];
+		sound.play();
 	})
 </script>
 
