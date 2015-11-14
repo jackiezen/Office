@@ -283,14 +283,14 @@ h2 {
 }
 
 #stack-book-1,
-#stack-book-2,
-#stack-book-3,
-#stack-book-4,
+.stack-book-2,
+.stack-book-3,
+.stack-book-4,
 #stack-book-5,
-#stack-book-6,
-#stack-book-7,
+.stack-book-6,
+.stack-book-7,
 #stack-book-8,
-#stack-book-9,
+.stack-book-9,
 #stack-book-10,
 #stack-book-11,
 #stack-book-12 {
@@ -307,7 +307,7 @@ h2 {
 	border-left: none;
 }
 
-#stack-book-2 {
+.stack-book-2 {
 	background-color: #FFF;
 	height: 5px;
 	width: 100px;
@@ -317,7 +317,7 @@ h2 {
 	transform: skew(15deg);
 }
 
-#stack-book-3 {
+.stack-book-3 {
 	background-color: #FFF;
 	height: 8px;
 	width: 105px;
@@ -327,7 +327,7 @@ h2 {
 	transform: skew(-10deg);
 }
 
-#stack-book-4 {
+.stack-book-4 {
 	background-color: #FFF;
 	height: 15px;
 	width: 110px;
@@ -347,7 +347,7 @@ h2 {
 	transform: skew(10deg);
 }
 
-#stack-book-6 {
+.stack-book-6 {
 	background-color: #FCD57E;
 	height: 0px;
 	width: 110px;
@@ -356,7 +356,7 @@ h2 {
 	margin-left: 0px;
 }
 
-#stack-book-7 {
+.stack-book-7 {
 	background-color: #FFF;
 	height: 15px;
 	width: 115px;
@@ -377,7 +377,7 @@ h2 {
 	margin-left: 15px;
 }
 
-#stack-book-9 {
+.stack-book-9 {
 	background-color: #FCD57E;
 	height: 6px;
 	width: 115px;
@@ -420,11 +420,11 @@ h2 {
 	animation: wiggle-1 0.2s infinite linear;
 }
 
-#stack-book:hover #stack-book-2 {
+#stack-book:hover .stack-book-2 {
 	animation: wiggle-2 0.4s infinite linear;
 }
 
-#stack-book:hover #stack-book-3 {
+#stack-book:hover .stack-book-3 {
 	animation: wiggle-3 0.5s infinite linear;
 }
 
@@ -583,7 +583,7 @@ h2 {
 	border-right: 8px solid #84A840;
 }
 
-#stack-binder-1-tb {
+.stack-binder-1-tb {
 	background-color: #84A840;
 }
 
@@ -609,15 +609,15 @@ h2 {
 	border-right: 10px solid #EABBAE;
 }
 
-#stack-binder-3-tb {
+.stack-binder-3-tb {
 	background-color: #EABBAE;
 }
 
-#stack-binder-4-bind {
+.stack-binder-4-bind {
 	border-left: 15px solid #6787C0;
 }
 
-#stack-binder-4-tb {
+.stack-binder-4-tb {
 	background-color: #6787C0;
 }
 
@@ -803,21 +803,21 @@ h2 {
 	transform: rotate(-2deg);
 }
 
-#pencil-tip,
-#pencil-tip-top {
+.pencil-tip,
+.pencil-tip-top {
 	position: relative;
 	margin-top: -10px;
 	width: 0;
 	height: 0;
 }
 
-#pencil-tip {
+.pencil-tip {
 	border-bottom: 10px solid #FAE7C7;
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
 }
 
-#pencil-tip-top {
+.pencil-tip-top {
 	margin-left: -1.5px;
 	border-bottom: 4px solid #3E3F4B;
 	border-left: 1.5px solid transparent;
@@ -2515,7 +2515,7 @@ p.paper {
 	background-color: #FFF;
 }
 
-#outlet-face {
+.outlet-face {
 	width: 17px;
 	height: 12px;
 	margin-left: 4px;
@@ -2525,7 +2525,7 @@ p.paper {
 	border-radius: 5px;
 }
 
-#outlet-face:before {
+.outlet-face:before {
 	content: "";
 	position: absolute;
 	margin-top: 3px;

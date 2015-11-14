@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<title>Office | Jacquelyn Zen</title>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Permanent+Marker|Pacifico' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 </head>
 
 <body>
@@ -36,7 +39,7 @@
 				<div class="hand second"></div>
 				<div id="clock-dot"></div>
 			</div>
-			<audio id="sound" preload="auto" loop>
+			<audio class="sound" preload="auto" loop>
 				<source src="sounds/clock.mp3" />
 			</audio>
 		</div>
@@ -46,18 +49,18 @@
 		<!--BOOK STACK-->
 		<div id="stack-book">
 			<div id="stack-book-1"></div>
-			<div id="stack-book-2"></div>
-			<div id="stack-book-3"></div>
-			<div id="stack-book-4"></div>
+			<div class="stack-book-2"></div>
+			<div class="stack-book-3"></div>
+			<div class="stack-book-4"></div>
 			<div id="stack-book-5"></div>
-			<div id="stack-book-6"></div>
-			<div id="stack-book-7"></div>
+			<div class="stack-book-6"></div>
+			<div class="stack-book-7"></div>
 			<div id="stack-book-8"></div>
-			<div id="stack-book-9"></div>
+			<div class="stack-book-9"></div>
 			<div id="stack-book-10"></div>
 			<div id="stack-book-11"></div>
 			<div id="stack-book-12"></div>
-			<audio id="sound" preload="auto" loop>
+			<audio class="sound" preload="auto" loop>
 				<source src="sounds/book.mp3" />
 			</audio>
 		</div>
@@ -68,41 +71,41 @@
 		<div id="stack-binder">
 			<div id="stack-binder-1">
 				<div class="stack-binder-right-bind" id="stack-binder-1-bind">
-					<div class="stack-binder-right-top" id="stack-binder-1-tb"></div>
+					<div class="stack-binder-right-top stack-binder-1-tb"></div>
 					<div class="stack-binder-right-ring">
 						<div class="stack-binder-right-paper"></div>
 					</div>
-					<div class="stack-binder-right-bottom" id="stack-binder-1-tb"></div>
+					<div class="stack-binder-right-bottom stack-binder-1-tb"></div>
 				</div>
 			</div>
 			<div id="stack-binder-2">
-				<div class="stack-binder-left-bind" id="stack-binder-4-bind">
-					<div class="stack-binder-left-top" id="stack-binder-4-tb"></div>
+				<div class="stack-binder-left-bind stack-binder-4-bind">
+					<div class="stack-binder-left-top stack-binder-4-tb"></div>
 					<div class="stack-binder-left-ring">
 						<div class="stack-binder-left-paper"></div>
 					</div>
-					<div class="stack-binder-left-bottom" id="stack-binder-4-tb"></div>
+					<div class="stack-binder-left-bottom stack-binder-4-tb"></div>
 				</div>
 			</div>
 			<div id="stack-binder-3">
 				<div class="stack-binder-right-bind" id="stack-binder-3-bind">
-					<div class="stack-binder-right-top" id="stack-binder-3-tb"></div>
+					<div class="stack-binder-right-top stack-binder-3-tb"></div>
 					<div class="stack-binder-right-ring">
 						<div class="stack-binder-right-paper"></div>
 					</div>
-					<div class="stack-binder-right-bottom" id="stack-binder-3-tb"></div>
+					<div class="stack-binder-right-bottom stack-binder-3-tb"></div>
 				</div>
 			</div>
 			<div id="stack-binder-4">
-				<div class="stack-binder-left-bind" id="stack-binder-4-bind">
-					<div class="stack-binder-left-top" id="stack-binder-4-tb"></div>
+				<div class="stack-binder-left-bind stack-binder-4-bind">
+					<div class="stack-binder-left-top stack-binder-4-tb"></div>
 					<div class="stack-binder-left-ring">
 						<div class="stack-binder-left-paper"></div>
 					</div>
-					<div class="stack-binder-left-bottom" id="stack-binder-4-tb"></div>
+					<div class="stack-binder-left-bottom stack-binder-4-tb"></div>
 				</div>
 			</div>
-			<audio id="sound" preload="auto">
+			<audio class="sound" preload="auto">
 				<source src="sounds/binder.mp3" />
 			</audio>
 		</div>
@@ -119,13 +122,13 @@
 					<div id="ruler-inner"></div>
 				</div>
 				<div id="pencil-1">
-					<div id="pencil-tip">
-						<div id="pencil-tip-top"></div>
+					<div class="pencil-tip">
+						<div class="pencil-tip-top"></div>
 					</div>
 				</div>
 				<div id="pencil-2">
-					<div id="pencil-tip">
-						<div id="pencil-tip-top"></div>
+					<div class="pencil-tip">
+						<div class="pencil-tip-top"></div>
 					</div>
 				</div>
 			</div>
@@ -145,7 +148,7 @@
 				</div>
 				<p class="cup">Jackie</p>
 			</div>
-			<audio id="sound" preload="auto" loop>
+			<audio class="sound" preload="auto" loop>
 				<source src="sounds/coffee.mp3" />
 			</audio>
 		</div>
@@ -154,12 +157,12 @@
 
 		<!--BOOK STACK-->
 		<div id="stack-book-small">
-			<div id="stack-book-2"></div>
-			<div id="stack-book-4"></div>
-			<div id="stack-book-3"></div>
-			<div id="stack-book-7"></div>
-			<div id="stack-book-6"></div>
-			<div id="stack-book-9"></div>
+			<div class="stack-book-2"></div>
+			<div class="stack-book-4"></div>
+			<div class="stack-book-3"></div>
+			<div class="stack-book-7"></div>
+			<div class="stack-book-6"></div>
+			<div class="stack-book-9"></div>
 		</div>
 		<!--END OF BOOK STACK-->
 
@@ -233,7 +236,7 @@
 					</div>
 				</div>
 			</div>
-			<audio id="sound" preload="auto">
+			<audio class="sound" preload="auto">
 				<source src="sounds/chair.mp3" />
 			</audio>
 		</div>
@@ -265,7 +268,7 @@
 						</div>
 					</div>
 					<div id="plant-pot"></div>
-					<audio id="sound" preload="auto" loop>
+					<audio class="sound" preload="auto" loop>
 						<source src="sounds/cactus.mp3" />
 					</audio>
 				</div>
@@ -278,7 +281,7 @@
 			<div id="shelf-2">
 				<div id="shelf-2-box">
 					<div id="box-heart"></div>
-					<audio id="sound" preload="auto">
+					<audio class="sound" preload="auto">
 						<source src="sounds/box.mp3" />
 					</audio>
 				</div>
@@ -294,7 +297,7 @@
 						<div id="tape-legs"></div>
 						<div id="tape-hole"></div>
 					</div>
-					<audio id="sound" preload="auto">
+					<audio class="sound" preload="auto">
 						<source src="sounds/tape.mp3" />
 					</audio>
 				</div>
@@ -374,7 +377,7 @@
 					<br>Coffee
 					<br>Bread</p>
 			</div>
-			<audio id="sound" preload="auto">
+			<audio class="sound" preload="auto">
 				<source src="sounds/paper.mp3" />
 			</audio>
 		</div>
@@ -383,8 +386,8 @@
 
 		<!--WALL OUTLET-->
 		<div id="outlet">
-			<div id="outlet-face"></div>
-			<div id="outlet-face"></div>
+			<div class="outlet-face"></div>
+			<div class="outlet-face"></div>
 		</div>
 		<!--END OF WALL OUTLET-->
 
@@ -398,7 +401,7 @@
 				<div id="bag-handle-back"></div>
 				<div id="bag-side"></div>
 			</div>
-			<audio id="sound" preload="auto">
+			<audio class="sound" preload="auto">
 				<source src="sounds/bag.mp3" />
 			</audio>
 		</div>
@@ -415,14 +418,12 @@
 	</div>
 </body>
 
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>
 	$(".drag").draggable().css('cursor', 'pointer');
 
 	$('#tape-dispenser, #coffee-cup, #clock, #plant, #big-box, #stack-binder, #stack-book, #shelf-2-box').hover(
 		function () {
-			sound = $(this).children('#sound')[0];
+			sound = $(this).children('.sound')[0];
 			sound.play();
 		},
 		function () {
@@ -433,13 +434,13 @@
 
 	$("#chair-seat, #bag, #chair").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
 		$(this).removeClass("animated");
-		sound = $(this).children('#sound')[0];
+		sound = $(this).children('.sound')[0];
 		sound.play();
 	})
 
 	$("#chair-seat, #bag, #chair").hover(function () {
 		$(this).addClass("animated");
-		sound = $(this).children('#sound')[0];
+		sound = $(this).children('.sound')[0];
 		sound.play();
 	})
 </script>
