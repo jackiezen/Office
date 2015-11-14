@@ -14,7 +14,6 @@ body {
 	width: 1000px;
 	height: 700px;
 	padding: 10px;
-	background-color: transparent;
 	margin: 0 auto;
 	position: fixed;
 	bottom: 0;
@@ -377,7 +376,7 @@ h2 {
 	margin-left: 15px;
 }
 
-.stack-book-9 {
+#stack-book-9 {
 	background-color: #FCD57E;
 	height: 6px;
 	width: 115px;
