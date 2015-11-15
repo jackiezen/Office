@@ -45,7 +45,6 @@
 		</div>
 		<!--END OF CLOCK-->
 
-
 		<!--BOOK STACK-->
 		<div id="stack-book">
 			<div id="stack-book-1"></div>
@@ -65,7 +64,6 @@
 			</audio>
 		</div>
 		<!--END OF BOOK STACK-->
-
 
 		<!--BINDER STACK-->
 		<div id="stack-binder">
@@ -111,7 +109,6 @@
 		</div>
 		<!--END OF BINDER STACK-->
 
-
 		<!--PENCIL HOLDER CONTENTS-->
 		<div id="pencil-holder-contents">
 			<div id="pencil-cup">
@@ -135,7 +132,6 @@
 		</div>
 		<!--END OF PENCIL HOLDER CONTENTS-->
 
-
 		<!--COFFEE CUP-->
 		<div id="coffee-cup">
 			<div id="coffee-cup-top">
@@ -154,7 +150,6 @@
 		</div>
 		<!--END OF COFFEE CUP-->
 
-
 		<!--BOOK STACK-->
 		<div id="stack-book-small">
 			<div class="stack-book-2"></div>
@@ -166,7 +161,6 @@
 		</div>
 		<!--END OF BOOK STACK-->
 
-
 		<!--TAKE-OUT-->
 		<div id="take-out">
 			<div id="take-out-box">
@@ -176,20 +170,20 @@
 						<div id="take-out-box-handle-dot"></div>
 					</div>
 				</div>
-
 				<div id="take-out-box-bottom-back">
 					<p class="box">Chinese
 						<br>Food</p>
 				</div>
-
 			</div>
 			<div id="chopsticks">
 				<div id="chopsticks-1"></div>
 				<div id="chopsticks-2"></div>
 			</div>
+			<audio class="sound" preload="auto">
+				<source src="sounds/chopsticks.mp3" />
+			</audio>
 		</div>
 		<!--END OF TAKE-OUT-->
-
 
 		<!--COMPUTER-->
 		<div id="computer">
@@ -206,13 +200,10 @@
 				<div id="computer-stand-hole"></div>
 				<div id="computer-cable"></div>
 			</div>
-
 			<div id="computer-stand-bottom"></div>
 			<div id="computer-stand-curve"></div>
 		</div>
-
 		<!--END OF COMPUTER-->
-
 
 		<!--CHAIR-->
 		<div id="chair">
@@ -241,7 +232,6 @@
 			</audio>
 		</div>
 		<!--END OF CHAIR-->
-
 
 		<!--SHELF 1-->
 		<div id="shelf-area">
@@ -305,7 +295,6 @@
 		</div>
 		<!--END OF SHELF 2-->
 
-
 		<!--PICTURES-->
 		<div id="picture">
 			<div id="picture-1"></div>
@@ -313,7 +302,6 @@
 			<div id="picture-3"></div>
 		</div>
 		<!--END OF PICTURES-->
-
 
 		<!--POST-ITS-->
 		<div class="drag" id="note-1" draggable="true">
@@ -330,13 +318,11 @@
 		</div>
 		<!--END OF POST-ITS-->
 
-
 		<!--PHOTOS-->
 		<div class="drag" id="photo-1">
 			<p class="photo">CAT LADY</p>
 		</div>
 		<!--END OF PHOTOS-->
-
 
 		<!--DESK-->
 		<div id="desk">
@@ -350,7 +336,6 @@
 			<div id="desk-leg-right"></div>
 		</div>
 		<!--END OF DESK-->
-
 
 		<!--BIG BOX-->
 		<div id="big-box">
@@ -383,14 +368,12 @@
 		</div>
 		<!--END OF BIG BOX-->
 
-
 		<!--WALL OUTLET-->
 		<div id="outlet">
 			<div class="outlet-face"></div>
 			<div class="outlet-face"></div>
 		</div>
 		<!--END OF WALL OUTLET-->
-
 
 		<!--BAG-->
 		<div id="bag">
@@ -407,7 +390,6 @@
 		</div>
 		<!--END OF BAG-->
 
-
 		<!--FLOOR BINDER-->
 		<div id="floor-binder">
 			<div id="floor-binder-1"></div>
@@ -421,7 +403,7 @@
 <script>
 	$(".drag").draggable().css('cursor', 'pointer');
 
-	$('#tape-dispenser, #coffee-cup, #clock, #plant, #big-box, #stack-binder, #stack-book, #shelf-2-box').hover(
+	$('#tape-dispenser, #coffee-cup, #clock, #plant, #big-box, #stack-binder, #stack-book, #shelf-2-box, #take-out').hover(
 		function () {
 			sound = $(this).children('.sound')[0];
 			sound.play();
@@ -436,13 +418,13 @@
 		$(this).removeClass("animated");
 		sound = $(this).children('.sound')[0];
 		sound.play();
-	})
+	});
 
 	$("#chair-seat, #bag, #chair").hover(function () {
 		$(this).addClass("animated");
 		sound = $(this).children('.sound')[0];
 		sound.play();
-	})
+	});
 </script>
 
 </html>
