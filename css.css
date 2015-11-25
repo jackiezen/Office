@@ -2,9 +2,6 @@ body {
 	cursor: default;
 	background-color: #A5D8DB;
 	font-family: 'Merriweather', serif;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 	overflow: hidden;
 	text-size-adjust: none;
@@ -735,11 +732,7 @@ h2 {
 	height: 18px;
 	background: #F47164;
 	border-radius: 50px 50px 0 0;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	-webkit-transform-origin: 0 100%;
-	-ms-transform-origin: 0 100%;
 	transform-origin: 0 100%;
 	z-index: 100;
 }
@@ -780,8 +773,6 @@ h2 {
 
 #pencil-1,
 #pencil-2 {
-	-webkit-transform-origin: 0%;
-	-ms-transform-origin: 0%;
 	transform-origin: 0%;
 	margin-top: -60px;
 	border-bottom: solid 8px #EABBAE;
@@ -848,14 +839,13 @@ h2 {
 }
 
 #pencil-cup:hover #heart {
-	-webkit-animation: heartbeat 0.5s infinite ease;
 	animation: heartbeat 0.5s infinite ease;
 	cursor: pointer;
 }
 
 @keyframes heartbeat {
 	100% {
-		transform: scale(1.2) translateX(-7px);
+		transform: scale(1.2) translate(-7px, 0px);
 	}
 }
 
@@ -2027,7 +2017,7 @@ p.box {
 		transform: translate(25px, -18px) rotate(70deg);
 	}
 	100% {
-		transform: translateY(0px, 0px) rotate(0deg);
+		transform: translate(0px, 0px) rotate(0deg);
 	}
 }
 
@@ -2698,14 +2688,14 @@ p.paper {
 
 #bag-body:after {
 	background: linear-gradient(-45deg, #E4AA9C 5px, transparent 0), linear-gradient(45deg, #E4AA9C 5px, transparent 0);
-	background-position: left-bottom;
+	background-position: left bottom;
 	background-repeat: repeat-x;
 	background-size: 10px 10px;
 }
 
 #bag-side:after {
 	background: linear-gradient(-45deg, #C49286 5px, transparent 0), linear-gradient(45deg, #C49286 5px, transparent 0);
-	background-position: left-bottom;
+	background-position: left bottom;
 	background-repeat: repeat-x;
 	background-size: 10px 10px;
 }
