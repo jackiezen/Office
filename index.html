@@ -1,144 +1,430 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<title>Office | Jacquelyn Zen</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css.css">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Permanent+Marker|Pacifico' rel='stylesheet' type='text/css'>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 </head>
 
 <body>
-	<div id="wrapper">
-		<div id="scene">
 
-			<!--CLOCK-->
-			<div id="clock">
-				<div id="clock-face">
-					<div class="clock-marker" id="clock-marker-12-6"></div>
-					<div class="clock-marker" id="clock-marker-1-7"></div>
-					<div class="clock-marker" id="clock-marker-2-8"></div>
-					<div class="clock-marker" id="clock-marker-3-9"></div>
-					<div class="clock-marker" id="clock-marker-4-10"></div>
-					<div class="clock-marker" id="clock-marker-5-11"></div>
+	<h1>Office</h1>
+	<h2>of Jacquelyn Zen</h2>
 
-					<div id="clock-inner"></div>
+	<!--FLOOR-->
+	<div id="floor"></div>
+	<!--END OF FLOOR-->
 
-					<div class="hand hour"></div>
-					<div class="hand minute"></div>
-					<div class="hand second"></div>
-					<div id="clock-dot"></div>
+	<div id="scene">
+
+		<!--CLOCK-->
+		<div id="clock">
+			<div id="clock-face">
+				<div class="clock-marker" id="clock-marker-12-6"></div>
+				<div class="clock-marker" id="clock-marker-1-7"></div>
+				<div class="clock-marker" id="clock-marker-2-8"></div>
+				<div class="clock-marker" id="clock-marker-3-9"></div>
+				<div class="clock-marker" id="clock-marker-4-10"></div>
+				<div class="clock-marker" id="clock-marker-5-11"></div>
+				<div id="clock-inner"></div>
+				<div class="hand hour"></div>
+				<div class="hand minute"></div>
+				<div class="hand second"></div>
+				<div id="clock-dot"></div>
+			</div>
+			<audio class="sound" preload="auto" loop>
+				<source src="sounds/clock.mp3" />
+			</audio>
+		</div>
+		<!--END OF CLOCK-->
+
+		<!--BOOK STACK-->
+		<div id="stack-book">
+			<div id="stack-book-1"></div>
+			<div class="stack-book-2"></div>
+			<div class="stack-book-3"></div>
+			<div class="stack-book-4"></div>
+			<div id="stack-book-5"></div>
+			<div class="stack-book-6"></div>
+			<div class="stack-book-7"></div>
+			<div id="stack-book-8"></div>
+			<div class="stack-book-9"></div>
+			<div id="stack-book-10"></div>
+			<div id="stack-book-11"></div>
+			<div id="stack-book-12"></div>
+			<audio class="sound" preload="auto" loop>
+				<source src="sounds/book.mp3" />
+			</audio>
+		</div>
+		<!--END OF BOOK STACK-->
+
+		<!--BINDER STACK-->
+		<div id="stack-binder">
+			<div id="stack-binder-1">
+				<div class="stack-binder-right-bind" id="stack-binder-1-bind">
+					<div class="stack-binder-right-top stack-binder-1-tb"></div>
+					<div class="stack-binder-right-ring">
+						<div class="stack-binder-right-paper"></div>
+					</div>
+					<div class="stack-binder-right-bottom stack-binder-1-tb"></div>
 				</div>
 			</div>
-			<!--END OF CLOCK-->
-
-			<!--BOOK STACK-->
-			<div id="stack-book">
-				<div id="stack-book-1"></div>
-				<div id="stack-book-2"></div>
-				<div id="stack-book-3"></div>
-				<div id="stack-book-4"></div>
-				<div id="stack-book-5"></div>
-				<div id="stack-book-6"></div>
-				<div id="stack-book-7"></div>
-				<div id="stack-book-8"></div>
-				<div id="stack-book-9"></div>
-				<div id="stack-book-10"></div>
-				<div id="stack-book-11"></div>
-				<div id="stack-book-12"></div>
-
-			</div>
-			<!--END OF BOOK STACK-->
-
-			<!--BINDER STACK-->
-			<div id="stack-binder">
-
-				<div id="stack-binder-1">
-					<div class="stack-binder-right-bind" id="stack-binder-1-bind">
-						<div class="stack-binder-right-top" id="stack-binder-1-tb"></div>
-						<div class="stack-binder-right-ring">
-							<div class="stack-binder-right-paper"></div>
-						</div>
-						<div class="stack-binder-right-bottom" id="stack-binder-1-tb"></div>
+			<div id="stack-binder-2">
+				<div class="stack-binder-left-bind stack-binder-4-bind">
+					<div class="stack-binder-left-top stack-binder-4-tb"></div>
+					<div class="stack-binder-left-ring">
+						<div class="stack-binder-left-paper"></div>
 					</div>
-				</div>
-
-				<div id="stack-binder-2">
-					<div class="stack-binder-left-bind" id="stack-binder-4-bind">
-						<div class="stack-binder-left-top" id="stack-binder-4-tb"></div>
-						<div class="stack-binder-left-ring">
-							<div class="stack-binder-left-paper"></div>
-						</div>
-						<div class="stack-binder-left-bottom" id="stack-binder-4-tb"></div>
-					</div>
-				</div>
-
-				<div id="stack-binder-3">
-					<div class="stack-binder-right-bind" id="stack-binder-3-bind">
-						<div class="stack-binder-right-top" id="stack-binder-3-tb"></div>
-						<div class="stack-binder-right-ring">
-							<div class="stack-binder-right-paper"></div>
-						</div>
-						<div class="stack-binder-right-bottom" id="stack-binder-3-tb"></div>
-					</div>
-				</div>
-
-				<div id="stack-binder-4">
-					<div class="stack-binder-left-bind" id="stack-binder-4-bind">
-						<div class="stack-binder-left-top" id="stack-binder-4-tb"></div>
-						<div class="stack-binder-left-ring">
-							<div class="stack-binder-left-paper"></div>
-						</div>
-						<div class="stack-binder-left-bottom" id="stack-binder-4-tb"></div>
-					</div>
+					<div class="stack-binder-left-bottom stack-binder-4-tb"></div>
 				</div>
 			</div>
-			<!--END OF BINDER STACK-->
+			<div id="stack-binder-3">
+				<div class="stack-binder-right-bind" id="stack-binder-3-bind">
+					<div class="stack-binder-right-top stack-binder-3-tb"></div>
+					<div class="stack-binder-right-ring">
+						<div class="stack-binder-right-paper"></div>
+					</div>
+					<div class="stack-binder-right-bottom stack-binder-3-tb"></div>
+				</div>
+			</div>
+			<div id="stack-binder-4">
+				<div class="stack-binder-left-bind stack-binder-4-bind">
+					<div class="stack-binder-left-top stack-binder-4-tb"></div>
+					<div class="stack-binder-left-ring">
+						<div class="stack-binder-left-paper"></div>
+					</div>
+					<div class="stack-binder-left-bottom stack-binder-4-tb"></div>
+				</div>
+			</div>
+			<audio class="sound" preload="auto">
+				<source src="sounds/binder.mp3" />
+			</audio>
+		</div>
+		<!--END OF BINDER STACK-->
 
-			<!--PENCIL HOLDER-->
-
-
+		<!--PENCIL HOLDER CONTENTS-->
+		<div id="pencil-holder-contents">
 			<div id="pencil-cup">
 				<div id="heart"></div>
 			</div>
-
 			<div id="pencil-holder">
 				<div id="ruler">
 					<div id="ruler-inner"></div>
 				</div>
 				<div id="pencil-1">
-					<div id="pencil-tip">
-						<div id="pencil-tip-top"></div>
+					<div class="pencil-tip">
+						<div class="pencil-tip-top"></div>
 					</div>
 				</div>
-				
 				<div id="pencil-2">
-					<div id="pencil-tip">
-						<div id="pencil-tip-top"></div>
+					<div class="pencil-tip">
+						<div class="pencil-tip-top"></div>
 					</div>
 				</div>
 			</div>
-
-
-
-			<!--END OF PENCIL HOLDER-->
-
-			<!--DESK-->
-			<div id="desk">
-				<div id="desk-top-1"></div>
-				<div id="desk-top-2"></div>
-				<div id="desk-top-3">
-					<div id="desk-top-3-left"></div>
-					<div id="desk-top-3-right"></div>
-				</div>
-				<div id="desk-legs"></div>
-			</div>
-			<!--END OF DESK-->
-
-
-
-
-
 		</div>
+		<!--END OF PENCIL HOLDER CONTENTS-->
+
+		<!--COFFEE CUP-->
+		<div id="coffee-cup">
+			<div id="coffee-cup-top">
+				<div id="coffee-cup-rim"></div>
+			</div>
+			<div id="coffee-cup-bottom">
+
+				<div id="coffee-cup-holder">
+					<div id="coffee-cup-logo"></div>
+				</div>
+				<p class="cup">Jackie</p>
+			</div>
+			<audio class="sound" preload="auto" loop>
+				<source src="sounds/coffee.mp3" />
+			</audio>
+		</div>
+		<!--END OF COFFEE CUP-->
+
+		<!--BOOK STACK-->
+		<div id="stack-book-small">
+			<div class="stack-book-2"></div>
+			<div class="stack-book-4"></div>
+			<div class="stack-book-3"></div>
+			<div class="stack-book-7"></div>
+			<div class="stack-book-6"></div>
+			<div class="stack-book-9"></div>
+		</div>
+		<!--END OF BOOK STACK-->
+
+		<!--TAKE-OUT-->
+		<div id="take-out">
+			<div id="take-out-box">
+				<div id="take-out-box-top"></div>
+				<div id="take-out-box-bottom">
+					<div id="take-out-box-handle">
+						<div id="take-out-box-handle-dot"></div>
+					</div>
+				</div>
+				<div id="take-out-box-bottom-back">
+					<p class="box">Chinese
+						<br>Food</p>
+				</div>
+			</div>
+			<div id="chopsticks">
+				<div id="chopsticks-1"></div>
+				<div id="chopsticks-2"></div>
+			</div>
+			<audio class="sound" preload="auto">
+				<source src="sounds/chopsticks.mp3" />
+			</audio>
+		</div>
+		<!--END OF TAKE-OUT-->
+
+		<!--COMPUTER-->
+		<div id="computer">
+			<div id="computer-side">
+				<div id="computer-back">
+					<div id="computer-logo"></div>
+					<div id="computer-logo-bite"></div>
+					<div id="computer-logo-stem"></div>
+					<div id="computer-logo-leaf"></div>
+				</div>
+			</div>
+			<div id="computer-stand">
+				<div id="computer-stand-shadow"></div>
+				<div id="computer-stand-hole"></div>
+				<div id="computer-cable"></div>
+			</div>
+			<div id="computer-stand-bottom"></div>
+			<div id="computer-stand-curve"></div>
+		</div>
+		<!--END OF COMPUTER-->
+
+		<!--CHAIR-->
+		<div id="chair">
+			<div id="chair-seat">
+				<div id="chair-arm-left"></div>
+				<div id="chair-back"></div>
+				<div id="chair-spine"></div>
+				<div id="chair-pole">
+					<div id="chair-rod"></div>
+				</div>
+				<div id="chair-arm-right"></div>
+				<div id="chair-legs">
+					<div id="chair-leg-left">
+						<div id="left-wheel"></div>
+					</div>
+					<div id="chair-leg-middle">
+						<div id="middle-wheel"></div>
+					</div>
+					<div id="chair-leg-right">
+						<div id="right-wheel"></div>
+					</div>
+				</div>
+			</div>
+			<audio class="sound" preload="auto">
+				<source src="sounds/chair.mp3" />
+			</audio>
+		</div>
+		<!--END OF CHAIR-->
+
+		<!--SHELF 1-->
+		<div id="shelf-area">
+			<div id="shelf-1">
+				<div id="shelf-1-book-1">
+					<div id="shelf-1-book-1-line-1"></div>
+					<div id="shelf-1-book-1-line-2"></div>
+					<div id="shelf-1-book-1-line-3"></div>
+				</div>
+				<div id="shelf-1-book-2">
+					<div id="shelf-1-book-2-line-1"></div>
+					<div id="shelf-1-book-2-line-2"></div>
+					<div id="shelf-1-book-2-line-3"></div>
+				</div>
+				<div id="shelf-1-book-3"></div>
+				<div id="shelf-1-book-4"></div>
+				<div id="plant">
+					<div id="cactus-body">
+						<div id="cactus-arm-left">
+							<div id="cactus-arm-left-up"></div>
+						</div>
+						<div id="cactus-arm-right">
+							<div id="cactus-arm-right-up"></div>
+						</div>
+					</div>
+					<div id="plant-pot"></div>
+					<audio class="sound" preload="auto" loop>
+						<source src="sounds/cactus.mp3" />
+					</audio>
+				</div>
+			</div>
+		</div>
+		<!--END OF SHELF 2-->
+
+		<!--SHELF 2-->
+		<div id="shelf-area-2">
+			<div id="shelf-2">
+				<div id="shelf-2-box">
+					<div id="box-heart"></div>
+					<audio class="sound" preload="auto">
+						<source src="sounds/box.mp3" />
+					</audio>
+				</div>
+				<div id="shelf-2-book-1">
+					<div id="shelf-2-book-1-line-1"></div>
+					<div id="shelf-2-book-1-line-2"></div>
+					<div id="shelf-2-book-1-line-3"></div>
+				</div>
+				<div id="shelf-2-book-2"></div>
+				<div id="tape-dispenser">
+					<div id="tape-roll"></div>
+					<div id="tape-body">
+						<div id="tape-legs"></div>
+						<div id="tape-hole"></div>
+					</div>
+					<audio class="sound" preload="auto">
+						<source src="sounds/tape.mp3" />
+					</audio>
+				</div>
+			</div>
+		</div>
+		<!--END OF SHELF 2-->
+
+		<!--PICTURES-->
+		<div id="picture">
+			<div id="picture-1"></div>
+			<div id="picture-2"></div>
+			<div id="picture-3"></div>
+		</div>
+		<!--END OF PICTURES-->
+
+		<!--POST-ITS-->
+		<div class="drag" id="note-1" draggable="true">
+			<p class="note">BUY MILK</p>
+		</div>
+		<div class="drag" id="note-2" draggable="true">
+			<p class="note">CALL MOM</p>
+		</div>
+		<div class="drag" id="note-3" draggable="true">
+			<p class="note">FEED CATS</p>
+		</div>
+		<div class="drag" id="note-4" draggable="true">
+			<p class="note">WATER CACTUS</p>
+		</div>
+		<!--END OF POST-ITS-->
+
+		<!--PHOTOS-->
+		<div class="drag" id="photo-1">
+			<p class="photo">CAT LADY</p>
+		</div>
+		<!--END OF PHOTOS-->
+
+		<!--DESK-->
+		<div id="desk">
+			<div id="desk-top-1"></div>
+			<div id="desk-top-2"></div>
+			<div id="desk-top-3">
+				<div id="desk-top-3-left"></div>
+				<div id="desk-top-3-right"></div>
+			</div>
+			<div id="desk-leg-left"></div>
+			<div id="desk-leg-right"></div>
+		</div>
+		<!--END OF DESK-->
+
+		<!--BIG BOX-->
+		<div id="big-box">
+			<div id="big-box-body">
+				<div id="big-box-shadow"></div>
+				<div id="big-box-hole"></div>
+			</div>
+			<div id="box-folder"></div>
+			<div id="folder-paper">
+				<p class="paper">Dear Jackie,
+					<br>
+					<br>Please bring home some chicken!
+					<br>
+					<br>
+					<br>Love,
+					<br>Your cats</p>
+			</div>
+			<div id="folder-paper-2">
+				<p class="paper">Grocery List
+					<br>
+					<br>Eggs
+					<br>Butter
+					<br>Flour
+					<br>Coffee
+					<br>Bread</p>
+			</div>
+			<audio class="sound" preload="auto">
+				<source src="sounds/paper.mp3" />
+			</audio>
+		</div>
+		<!--END OF BIG BOX-->
+
+		<!--WALL OUTLET-->
+		<div id="outlet">
+			<div class="outlet-face"></div>
+			<div class="outlet-face"></div>
+		</div>
+		<!--END OF WALL OUTLET-->
+
+		<!--BAG-->
+		<div id="bag">
+			<div id="bag-body">
+				<div id="bag-logo"></div>
+				<p class="bag">Groceries</p>
+				<div id="bag-handle-front"></div>
+				<div id="bag-handle-back"></div>
+				<div id="bag-side"></div>
+			</div>
+			<audio class="sound" preload="auto">
+				<source src="sounds/bag.mp3" />
+			</audio>
+		</div>
+		<!--END OF BAG-->
+
+		<!--FLOOR BINDER-->
+		<div id="floor-binder">
+			<div id="floor-binder-1"></div>
+			<div id="floor-binder-2"></div>
+		</div>
+		<!--END OF FLOOR BINDER-->
+
 	</div>
 </body>
+
+<script>
+	$(".drag").draggable().css('cursor', 'pointer');
+
+	$('#tape-dispenser, #coffee-cup, #clock, #plant, #big-box, #stack-binder, #stack-book, #shelf-2-box, #take-out').hover(
+		function () {
+			sound = $(this).children('.sound')[0];
+			sound.play();
+		},
+		function () {
+			sound.pause();
+			sound.currentTime = 0;
+		}
+	);
+
+	$("#chair-seat, #bag, #chair").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
+		$(this).removeClass("animated");
+		sound = $(this).children('.sound')[0];
+		sound.play();
+	});
+
+	$("#chair-seat, #bag, #chair").hover(function () {
+		$(this).addClass("animated");
+		sound = $(this).children('.sound')[0];
+		sound.play();
+	});
+</script>
 
 </html>
