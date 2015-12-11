@@ -18,7 +18,7 @@ body {
 		display: block !important;
 	}
 	h1 {
-		font-size: 50px;
+		font-size: 50px !important;
 	}
 	h2 {
 		font-size: 20px;
