@@ -7,6 +7,27 @@ body {
 	text-size-adjust: none;
 }
 
+@media only screen and (max-width: 950px) {
+	#scene {
+		display: none !important;
+	}
+	#floor {
+		display: none;
+	}
+	p.mobile {
+		display: block !important;
+	}
+}
+
+p.mobile {
+	color: #F46E65;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 80px;
+	line-height: 40px;
+	display: none;
+}
+
 #scene {
 	width: 1000px;
 	height: 700px;
@@ -16,6 +37,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	display: block;
 }
 
 h1 {
@@ -1010,7 +1032,7 @@ p.cup {
 	height: auto;
 	display: inline-block;
 	position: absolute;
-	margin-top: 315px;
+	margin-top: 313px;
 	margin-left: 800px;
 	cursor: pointer;
 }
@@ -1087,16 +1109,16 @@ p.cup {
 
 @keyframes chopstick-raise {
 	20% {
-		transform: translate(20px, -50px) rotate(50deg);
+		transform: translate(20px, -55px) rotate(50deg);
 	}
 	50% {
-		transform: translate(20px, -50px) rotate(30deg);
+		transform: translate(20px, -55px) rotate(30deg);
 	}
 	65% {
-		transform: translate(20px, -50px) rotate(50deg);
+		transform: translate(20px, -55px) rotate(50deg);
 	}
 	80% {
-		transform: translate(20px, -50px) rotate(30deg);
+		transform: translate(20px, -55px) rotate(30deg);
 	}
 	100% {
 		transform: translate(0px, 0px) rotate(15deg);
@@ -1157,6 +1179,8 @@ p.cup {
 	width: 5px;
 	height: 5px;
 	border-radius: 50%;
+	margin-top: -2px;
+	margin-left: -1px;
 }
 
 p.box {
@@ -2186,6 +2210,7 @@ p.box {
 	}
 }
 
+
 /*END OF PICTURE 1*/
 
 
@@ -2246,6 +2271,7 @@ p.note {
 p.note:hover {
 	color: #BD735F;
 }
+
 
 /*END OF POST-ITS*/
 
